@@ -120,3 +120,8 @@ h1{
     width: 42%;
     padding-right: 52px;
 }
+
+
+p{
+    white-space: nowrap;
+}
