@@ -118,7 +118,7 @@ p {
   }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 1015px) {
   #woman {
     width: 301px;
     height: 227px;
@@ -148,7 +148,7 @@ p {
     position: relative;
     margin: 0px;
     margin: 0 auto;
-}
+  }
 
   .image {
     position: absolute;
@@ -157,6 +157,8 @@ p {
   .questions {
     width: 100%;
     margin: 0 auto;
+    font-size: 16px;
+    padding: 0px;
   }
 
   .seta {
@@ -179,9 +181,12 @@ p {
     justify-content: space-between;
   }
   .container-father {
-    width: 100%;
+    width: 69%;
     height: 100%;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    display: block;
+    margin: 0 auto;
   }
 }
