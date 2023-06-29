@@ -132,6 +132,9 @@ p {
 
   #ilu-box {
     position: absolute;
+    top: 104px;
+    left: 34%;
+    width: 108px;
   }
   #tri {
     position: relative;
@@ -205,6 +208,9 @@ p {
     left: 19vw;
 
   }
+  #ilu-box{
+    left: 29%;
+  }
 }
 
 
@@ -217,10 +223,13 @@ p {
     left: 12vw;
 
   }
+  #ilu-box {
+    left: 21%;
+}
 }
 
 
-@media (max-width: 376px) {
+@media (max-width: 454px) {
   #tri{
     left: -4vw;
   }
@@ -239,4 +248,7 @@ p {
   .seta{
     left: 91%;
   }
+  #ilu-box {
+    left: 4%;
+}
 }
