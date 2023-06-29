@@ -123,7 +123,7 @@ p {
     width: 301px;
     height: 227px;
     position: relative;
-    left: 12vw;
+    left: 24vw;
     bottom: 201%;
   }
   .grid-section {
@@ -135,7 +135,7 @@ p {
   }
   #tri {
     position: relative;
-    left: 12vw;
+    left: 24vw;
     top: -62%;
     height: 315px;
   }
@@ -192,5 +192,51 @@ p {
     padding-top: 50px;
     display: block;
     margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 782px) {
+  #tri{
+    left: 19vw;
+  }
+
+  #woman{
+    left: 19vw;
+
+  }
+}
+
+
+@media (max-width: 602px) {
+  #tri{
+    left: 12vw;
+  }
+
+  #woman{
+    left: 12vw;
+
+  }
+}
+
+
+@media (max-width: 376px) {
+  #tri{
+    left: -4vw;
+  }
+
+  #woman{
+    left: -4vw;
+
+  }
+
+  .div{
+    padding-left: 3px;
+  }
+  .questions{
+    font-size: 14px;
+  }
+  .seta{
+    left: 91%;
   }
 }
