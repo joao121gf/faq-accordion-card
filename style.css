@@ -42,36 +42,67 @@ body {
 
 h1 {
   margin-bottom: 30px;
-  margin-top: 60px;
+  margin-top: 27px;
   font-size: 30px;
 }
 .quest {
   font-weight: 400;
 }
 
+
+
 .resp {
   font-weight: 400;
-  display: none;
+  /* display: none; */
+  padding-top: 10px;
+  opacity: 0;
 }
+
+
+
 
 .div {
   padding: 23px;
-  padding-right: 114px;
   border-bottom: 2px solid hsl(240, 5%, 91%);
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0;
 }
 
-.div:hover {
-  background-color: aquamarine;
-}
+
 
 .seta {
   height: 12px;
   position: relative;
-  left: 29%;
+  left: -4%;
 }
 
+.seta.circle{
+  animation: rotateUpsideDown .2s linear forwards;
+
+}
+
+.seta.reverse {
+  animation: rotateRightSideUp 0.2s linear forwards;
+}
+
+@keyframes rotateRightSideUp {
+  from {
+    transform: rotateX(180deg);
+  }
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes rotateUpsideDown {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(180deg);
+  }
+}
 #tri {
   position: relative;
   left: -26%;
@@ -113,6 +144,14 @@ p {
   display: block;
   transition: max-height 3s ease;
   animation: showDown 2s forwards;
+}
+
+
+
+
+.exp{
+  padding-bottom: 10px !important;
+  transition: .2s;
 }
 
 @keyframes showDown {
@@ -194,6 +233,9 @@ p {
     position: absolute;
     left: 88%;
   }
+
+
+
 
   .questions h1 {
     margin-bottom: 30px;
