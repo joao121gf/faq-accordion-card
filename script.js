@@ -5,18 +5,6 @@ window.addEventListener("load", () => {
   const seta = document.querySelectorAll(".seta");
 
 
-
-  function changeColor(shouldChange) {
-    const divMenor = document.querySelector('.div-menor');
-    if (shouldChange) {
-      divMenor.classList.add('paragrafo-hover');
-    } else {
-      divMenor.classList.remove('paragrafo-hover');
-    }
-  }
-  
-
-
   seta.forEach((i) => {
     i.classList.add("circle");
     i.classList.add("reverse");

@@ -49,17 +49,12 @@ h1 {
   font-weight: 400;
 }
 
-
-
 .resp {
   font-weight: 400;
   /* display: none; */
   padding-top: 10px;
   opacity: 0;
 }
-
-
-
 
 .div {
   padding: 23px;
@@ -69,17 +64,14 @@ h1 {
   padding-bottom: 0;
 }
 
-
-
 .seta {
   height: 12px;
   position: relative;
   left: -4%;
 }
 
-.seta.circle{
-  animation: rotateUpsideDown .2s linear forwards;
-
+.seta.circle {
+  animation: rotateUpsideDown 0.2s linear forwards;
 }
 
 .seta.reverse {
@@ -139,34 +131,27 @@ p {
   white-space: nowrap;
 }
 
-
-.active{
+.active {
   display: block;
   transition: max-height 3s ease;
   animation: showDown 2s forwards;
 }
 
-
-
-
-.exp{
-  padding-bottom: 10px !important;
-  transition: .2s;
+.exp {
+  padding-bottom: 10px;
+  transition: 0.2s;
 }
 
 @keyframes showDown {
   from {
     opacity: 0;
-
   }
-  to{
+  to {
     opacity: 1;
   }
-  
 }
 
-
-.div:hover{
+.div:hover {
   cursor: pointer;
   user-select: none;
 }
@@ -208,7 +193,7 @@ p {
   }
   .box-content {
     width: 80%;
-    height: 653px;
+    height: auto;
     background-color: white;
     border-radius: 20px;
     overflow: initial;
@@ -230,25 +215,26 @@ p {
 
   .seta {
     height: 12px;
-    position: absolute;
-    left: 88%;
+    position: relative;
+    left: 93%;
+    top: -29px;
   }
-
-
-
+  .exp {
+    padding-bottom: 10px;
+  }
 
   .questions h1 {
     margin-bottom: 30px;
 
     margin-bottom: 30px;
-    margin-top: 101px;
+    margin-top: 76px;
 
     font-size: 47px;
     text-align: center;
     padding-top: 130px;
   }
   .div {
-    padding: 23px;
+    /* height: 72px; */
     padding-right: 0;
     border-bottom: 2px solid hsl(240, 5%, 91%);
     display: block;
@@ -263,59 +249,59 @@ p {
     display: block;
     margin: 0 auto;
   }
+  .resp {
+    font-size: 14px;
+  }
 }
 
-
 @media (max-width: 782px) {
-  #tri{
+  .resp {
+    white-space: normal;
+  }
+  #tri {
     left: 19vw;
   }
 
-  #woman{
+  #woman {
     left: 19vw;
-
   }
-  #ilu-box{
+  #ilu-box {
     left: 29%;
   }
 }
 
-
 @media (max-width: 602px) {
-  #tri{
+  #tri {
     left: 12vw;
   }
 
-  #woman{
+  #woman {
     left: 12vw;
-
   }
   #ilu-box {
     left: 21%;
+  }
 }
-}
-
 
 @media (max-width: 454px) {
-  #tri{
+  #tri {
     left: -4vw;
   }
 
-  #woman{
+  #woman {
     left: -4vw;
-
   }
 
-  .div{
+  .div {
     padding-left: 3px;
   }
-  .questions{
-    font-size: 14px;
+  .questions {
+    font-size: 13px;
   }
-  .seta{
+  .seta {
     left: 91%;
   }
   #ilu-box {
     left: 4%;
-}
+  }
 }
